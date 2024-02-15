@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Recipe List</title>
+  </head>
+  <body>
+    <header>Recipe Book</header>
+    <ul>
+      {% for recipe in recipes %}
+      <li><a href="{{recipe.link}}">{{recipe.name}}</a></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
